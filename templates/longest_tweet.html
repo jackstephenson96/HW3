@@ -1,0 +1,15 @@
+{% block content %}
+
+The tweet text with the most non-whitespace characters is:
+<br>
+<br>
+<i>{{output[0]}},</i> posted by <b>@{{output[1]}}</b> ( display name)
+{% endblock %}
+
+<p>------------</p>
+<h3>Navigation</h3>
+<ul>
+    <li><a href="{{ url_for('index')}}">Go to Tweet input form.</a></li>
+    <li><a href="{{ url_for('see_all_users')}}">See all users.</a></li>
+    <li><a href="{{ url_for('see_all_tweets')}}">See all tweets so far.</a></li>
+</ul>
